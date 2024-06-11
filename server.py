@@ -6,7 +6,7 @@ from scan import search_pdfs_in_folder
 from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": "https://neet-frontend.vercel.app"}})
+CORS(app, resources={r"/*": {"origins": "http://localhost:3000"}})
 
 @app.route('/process', methods=['POST'])
 def process():
